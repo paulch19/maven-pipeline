@@ -2,9 +2,9 @@ pipeline{
     agent any
 
     stages {
-        stage ('Hello'){
+        stage ('Running app stage'){
             steps{
-                echo "hello"
+                bat "javac DemoApplication.java"
             }
         }
     }
